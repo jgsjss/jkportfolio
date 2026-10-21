@@ -1,223 +1,341 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-    <title>jk's portfolio</title>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>전광수 · Java/Spring 백엔드 개발자</title>
+    <meta name="description" content="공공시설 회원관리·예약·결제 시스템을 구축하고 운영하는 Java/Spring 백엔드 개발자 전광수의 포트폴리오"/>
+    <meta property="og:title" content="전광수 · Java/Spring 백엔드 개발자"/>
+    <meta property="og:description" content="공공시설 회원관리·예약·결제 시스템 구축 및 운영"/>
+    <link rel="preload" href="assets/fonts/NanumSquareEB.woff" as="font" type="font/woff" crossorigin/>
+    <link rel="stylesheet" href="assets/css/site.css"/>
+    <script>document.documentElement.classList.add('js');</script>
 </head>
-<body class="is-preload">
+<body>
+<a class="skip" href="#sheet-cert">본문 바로가기</a>
 
-<!-- Header -->
-<header id="header">
-    <div class="inner">
-        <a href="#" class="image avatar"><img src="images/jgsjss9854@naver.com.jpg" alt=""/></a>
-        <h1><strong>전광수</strong>,<br/>
-            열심히 다이어트와 공부중인<br/>
-            신입 개발자 입니다. <br/>
-        </h1>
-    </div>
-</header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <filter id="ink">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/>
+    </filter>
+</svg>
 
-<!-- Main -->
-<div id="main">
+<nav class="index" aria-label="별지 목차">
+    <ol>
+        <li><a href="#sheet-cert">경력확인서</a></li>
+        <li><a href="#sheet-projects">별지 1 · 구축 사업</a></li>
+        <li><a href="#sheet-cases">별지 2 · 문제 해결</a></li>
+        <li><a href="#sheet-integrations">별지 3 · 외부 연동</a></li>
+        <li><a href="#sheet-skills">별지 4 · 기술·업무 방식</a></li>
+        <li><a href="#sheet-archive">별지 5 · 학습 기록</a></li>
+        <li><a href="#sheet-contact">연락처</a></li>
+    </ol>
+</nav>
 
-    <!-- One -->
-    <section id="one">
-        <header class="major">
-            <h2>뒤늦게 적성을 찾은 욕심많은 개발자입니다.</h2>
-        </header>
+<main>
 
-        <h3>목차</h3>
-        <p>
-            <a href="#" style="color: black"> 1) 간단프로필 <br/> </a>
-            <a href="#three" style="color: black"> 2) 기술스택</a> <br/>
-            <a href="#two" style="color: black"> 3) 프로젝트</a> <br/>
-        </p>
+    <!-- 경력확인서 -->
+    <section class="sheet cert" id="sheet-cert" aria-labelledby="cert-title">
+        <div class="sheet-meta">
+            <span>확인번호 <span class="num">JGS-2022-0801</span></span>
+            <span>작성일 <span class="num">2026. 10. 22.</span> · <span class="tnum">(7쪽 중 1쪽)</span></span>
+        </div>
 
-        <p>Birth : 87.07.06 <br/>
-            Born : 부산광역시 <br/>
-            Hobby : 장르불문 소설 읽기, 스쿠터 라이딩 <br/>
-            Strength : 경청을 잘함, 호기심 많음, 좋아하는 것에는 열정을 바쳐서 습득함. <br/>
-            attitude : 겸손한 자세로 주변의 조언에 귀 기울이고, 새로운 것을 배움에 두려워 하지 않으며 나아가겠습니다. <br/>
+        <h1 id="cert-title">경력확인서</h1>
 
-        </p>
-        <!-- <ul class="actions">
-            <li><a href="#" class="button">Learn More</a></li>
-        </ul>
-    </section> -->
+        <table class="form">
+            <tbody>
+            <tr>
+                <th scope="row">성명</th>
+                <td><span class="big">전광수</span><span class="sub">Java · Spring 백엔드 개발자</span></td>
+            </tr>
+            <tr>
+                <th scope="row">주요 업무</th>
+                <td>공공시설 회원관리 · 예약 · 결제 시스템 구축 및 운영<span class="sub">로그인·회원가입, 온라인 수강·대관 신청, PG 결제, 키오스크 API 연동, 관리자 정산·CMS</span></td>
+            </tr>
+            <tr>
+                <th scope="row">경력</th>
+                <td>
+                    <ul>
+                        <li><b>(주)대원정보문화</b> 개발팀 대리 · 백엔드/서버 <span class="num">2022.08 ~ 재직중</span></li>
+                        <li><b>eeta(이타)</b> Vue.js 프론트엔드, Node.js·Express 서버 · 약 4개월</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">신규 구축</th>
+                <td>동작문화재단(진행중) · 금천구 · 송파구 · 광주북구 · 강동구 <span class="sub">유지보수·고도화 8개 기관</span></td>
+            </tr>
+            <tr>
+                <th scope="row">개선 실적</th>
+                <td>
+                    <ul>
+                        <li>운영 통계 조회 <span class="delta"><s>90초 이상</s> → 수초 이내</span></li>
+                        <li>분납 결제 취소 시 가맹점 ID 불일치 해소</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p class="end">― 이하 여백 ―</p>
 
-        <!-- Two -->
-        <section id="three">
-            <h2>기술 스택</h2>
+        <div class="attest">
             <div>
-                <div>
-                    <img src="images/123-removebg-preview.png" style="width: 20%;" >
-                    <img src="images/java-logo-removebg-preview.png" style="width: 20%;" >
-                    <img src="images/JSP-removebg-preview.png" style="width: 20%;">
-                    <img src="images/springboot-removebg-preview.png" style="width: 20%;">
-                </div>
-                <div>
-                    <img src="images/mariadb-removebg-preview.png" style="width: 20%;">
-                    <img src="images/oracle-removebg-preview.png" style="width: 20%;">
-                    <img src="images/Node.js.png" style="width: 20%;">
-                    <img src="images/logo-vuejs-min.png" style="width: 20%;">
-                </div>
-                <div>
-                    <img src="images/ajax-removebg-preview.png" style="width: 20%;">
-                    <img src="images/git-removebg-preview.png" style="width: 20%;">
-                    <img src="images/intellij-removebg-preview.png" style="width: 20%;">
-                    <img src="images/vscode-removebg-preview.png" style="width: 20%;">
+                <p>위 사람은 공공시설의 회원관리·예약·결제 시스템을 요구사항 분석부터 개발, 배포, 운영까지 맡아 왔음을 확인합니다.</p>
+                <div class="actions">
+                    <a class="btn primary" href="#sheet-cases">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v11M3.5 8.5 8 13l4.5-4.5"/></svg>
+                        문제 해결 사례 보기
+                    </a>
+                    <a class="btn" href="#sheet-contact">연락하기</a>
                 </div>
             </div>
-        </section>
+            <div class="issuer">
+                <span>전 광 수<small>본인 작성</small></span>
+                <span class="seal" aria-label="전광수 인장" role="img">
+                    <svg viewBox="0 0 100 100" aria-hidden="true">
+                        <rect x="5" y="5" width="90" height="90" rx="6" fill="none" stroke="currentColor" stroke-width="6"/>
+                        <g fill="currentColor" font-family="NanumSquare, sans-serif" font-weight="800" font-size="34" text-anchor="middle">
+                            <text x="31" y="45">전</text>
+                            <text x="69" y="45">광</text>
+                            <text x="31" y="84">수</text>
+                            <text x="69" y="84">인</text>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </section>
 
-        <section id="two">
-            <h2>1) 자바 프로젝트</h2>
-            <!--						<div class="row">-->
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="images/fulls/서블릿계산기.png" class="image fit thumb"><img src="images/thumbs/서블릿계산기.png"
-                                                                               alt=""/></a>
-                <h3>서블릿을 이용한 계산기 프로그래밍</h3>
-                <p>자바 개념 공부가 끝나고 servlet을 공부하면서 실습겸 작성한 코드입니다.</p>
-                Github Repository : <a href="https://github.com/jgsjss/servCalc" target='_blank' style="color: black"> https://github.com/jgsjss/servCalc</a>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <div style="position: relative; margin: 0 auto; width: 100%;">
-                    <div style="width: 100%; padding-bottom: 56.25%;" >
-                <iframe width="980" height="681" src="https://www.youtube.com/embed/FwIp1h5cpxY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1; "></iframe>
-                    </div>
-                </div>
-                <h3>서블릿과 JSP로 피크닉 용품 쇼핑몰 제작</h3>
-                <p>서블릿 학습용 프로젝트로 제작했으며, GCP를 활용하여 인스턴스에 베포해둔 Maria DB와 연동한 프로젝트입니다.</p>
-                Github Repository : <a href="https://github.com/jgsjss/Market-main" target='_blank' style="color: black"> https://github.com/jgsjss/Market-main </a>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                ticle class="col-6 col-12-xsmall work-item">
-                <div style="position: relative; margin: 0 auto; width: 100%;">
-                    <div style="width: 100%; padding-bottom: 56.25%;" >
-                <iframe width="980" height="700" src="https://www.youtube.com/embed/VdNn3VVzpdU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;"></iframe>
-                    </div>
-                </div>
-                <h3>스프링부트로 맛집소개 웹서비스 개발</h3>
-                <p>학원에서 진행한 프로젝트 입니다. 부산의 맛집을 소개하고 할인쿠폰등을 제공하는 사이트 입니다. jsp 학습 후 스프링 프레임워크가 아닌 부트로 건너뛰며 학습과 프로젝트를
-                    진행했습니다. 템플릿은 타임리프, ORM은 JPA 의 구현체인 Hibernate를 사용했습니다.<br/>
-                    제작 후 AWS의 프리티어 서비스를 이용하여 무중단 배포를 하였으나, 사실 데브옵스 관련된 부분은 학습할 시간이 부족해서 강사님의 도움을 많이 받았습니다. 데이터베이스 또한
-                    AWS의 RDMS를 이용하였고, 현재는 비용이 청구되어 인스턴스를 삭제한 상태입니다.
-                </p>
-                Github Repository : <a href="https://github.com/jgsjss/bmjWhere" target='_blank' style="color: black"> https://github.com/jgsjss/bmjWhere</a>
-            </article>
-            <!--						</div>-->
-            <h2>2) 자바스크립트(Vue, Node) 프로젝트</h2>
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="images/fulls/vlog.png" class="image fit thumb"><img src="images/thumbs/vlog.png" alt=""/></a>
-                <h3>Vue.js 를 이용한 블로그 제작</h3>
-                <p>컴포넌트 설계 및 데이터 프롭스 등을 공부하며 작성한 토이프로젝트 입니다.</p>
-                Github Repository : <a href="https://github.com/jgsjss/vlog" target='_blank' style="color: black">
-                https://github.com/jgsjss/stargram </a><br/>
-                <a href="https://jgsjss.github.io/vlog" target='_blank' class="icon brands fa-github" style="color: black"><span class="label">Github</span></a>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="images/fulls/stargram.png" class="image fit thumb"><img src="images/thumbs/stargram.png" alt=""/></a>
-                <h3>Vue.js로 인스타그램 제작</h3>
-                <p>vuex 및 여러가지 vue 문법을 이용하여 인스타그램 형식으로 제작한 토이프로젝트 입니다.<br/>
-                    Github Repository : <a href="https://github.com/jgsjss/stargram" target='_blank' style="color: black">
-                        https://github.com/jgsjss/stargram </a>
-                </p>
-                <a href="https://jgsjss.github.io/stargram" target='_blank' class="icon brands fa-github" style="color: black"><span
-                        class="label">Github</span></a>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="images/fulls/vudongsan.png" class="image fit thumb"><img src="images/thumbs/vudongsan.png"
-                                                                                  alt=""/></a>
-                <h3>Vue.js를 활용한 부동산 웹 어플리케이션 토이 프로젝트입니다.</h3>
-                <p>스테이트 변경 및 관리, 프롭스 등을 활용하였으며, 위의 다른 뷰 프로젝트와 마찬가지로 깃허브를 통해 호스팅 하였습니다.
-                    제목을 클릭하면 모달창이 나오며 개월수 변경으로 월세 금액도 변경됩니다.</p>
-                Github Repository : <a href="https://github.com/jgsjss/stargram" target='_blank' style="color: black">
-                https://github.com/jgsjss/stargram </a><br/>
-                <a href="https://jgsjss.github.io/vudongsan" target='_blank' class="icon brands fa-github" style="color: black"><span
-                        class="label">Github</span></a>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <div style="position: relative; margin: 0 auto; width: 100%;">
-                    <div style="width: 100%; padding-bottom: 56.25%;" >
-                <iframe width="980" height="687" src="https://www.youtube.com/embed/uQXyAa9aKa8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;" ></iframe>
-                    </div>
-                </div>
-                <h3>Node 런타임에서 express 및 ejs를 이용한 TodoApp 프로젝트 입니다.</h3>
-                <p>Express 라이브러리로 서버개발을 하고, NOSQL 데이터베이스인 몽고DB와 연동시켜 TodoApp 프로젝트를 개발했습니다.<br/>
-                    개발 후 GoogleCloudPlatform 서비스에서 Compute Engine 를 활용하여 인스턴스를 만들고, 베포하려했으나<br/>
-                    빌드후 베포시에 에러가 발생하여 현재 다시 수정중에 있으며, 유튜브 영상으로 프로젝트 구현 설명하였습니다.
-                </p>
-                Github Repository : <a href="https://github.com/jgsjss/TODOAPP" target='_blank' style="color: black">
-                https://github.com/jgsjss/TODOAPP </a><br/>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <div style="position: relative; margin: 0 auto; width: 100%;">
-                <div style="width: 100%; padding-bottom: 56.25%;" >
-                <iframe width="980" height="660" src="https://www.youtube.com/embed/0sQg9YONccs" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;" allowfullscreen></iframe>
-                </div>
-                </div>
-                    <h3>Node.js에서 express로 서버구현, Vue.js로 프론트앤드 구현한 Single Page Application 개발 프로젝트 입니다.</h3>
-                <p>jsp, ejs, 스프링부트의 타임리프 같은 서버사이드 렌더링이 아닌, 백앤드와 프론트가 분리된 프로그램 개발은 처음이라 많이 부족하지만, 배울점이 많아서 매우 재밌게 진행했습니다. 특히 자바스크립트로
-                    개발하는것의 장단점을 많이 느꼈습니다. 그리고 특히, Vue.js를 배우며 사용하면서 React에 대한 궁금증도 생겨서 언젠가 여유가 되면 공부해볼 생각입니다.
-                </p>
-                Github Repository : <a href="https://github.com/jgsjss/ding" style="color: black">
-                https://github.com/jgsjss/ding </a><br/>
-                Github Repository : <a href="https://github.com/jgsjss/dong" style="color: black">
-                https://github.com/jgsjss/dong </a><br/>
-            </article>
-        </section>
-        <!-- Four -->
+    <!-- 별지 1 -->
+    <section class="sheet" id="sheet-projects" aria-labelledby="projects-title">
+        <div class="sheet-meta"><span>[별지 제1호 서식]</span><span class="tnum">(7쪽 중 2쪽)</span></div>
+        <h2 id="projects-title">구축 사업 내역</h2>
+        <p class="lead">모든 사업은 전자정부프레임워크 기반 유저 홈페이지 전반(로그인·회원가입, 온라인 수강·대관 신청, PG 결제, 키오스크 API 연동)을 공통으로 맡았습니다. 아래에는 사업마다 추가로 담당한 범위를 적었습니다.</p>
+        <table class="form stack">
+            <thead>
+            <tr><th scope="col">번호</th><th scope="col">사업명</th><th scope="col">기간</th><th scope="col">추가 담당 범위</th><th scope="col">상태</th></tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row" class="num">1</th>
+                <td data-label="사업명" class="name"><b>동작문화재단 통합예약시스템 구축</b></td>
+                <td data-label="기간" class="nowrap num">2026.08 ~ 2026.11</td>
+                <td data-label="추가 담당 범위">공연·전시 티켓 접수, 관리자 정산·결제</td>
+                <td data-label="상태"><span class="state live">진행중</span></td>
+            </tr>
+            <tr>
+                <th scope="row" class="num">2</th>
+                <td data-label="사업명" class="name"><b>금천구시설관리공단 회원관리시스템 개발</b></td>
+                <td data-label="기간" class="nowrap num">2026.01 ~ 2026.06</td>
+                <td data-label="추가 담당 범위">문화비 소득공제 시스템 <a href="#case-1" class="xref">사안 1 참조</a></td>
+                <td data-label="상태"><span class="state done">납품 완료</span></td>
+            </tr>
+            <tr>
+                <th scope="row" class="num">3</th>
+                <td data-label="사업명" class="name"><b>송파구체육문화회관 회원관리시스템 개발</b></td>
+                <td data-label="기간" class="nowrap num">2025.01 ~ 2025.08</td>
+                <td data-label="추가 담당 범위">유저 홈페이지 전반</td>
+                <td data-label="상태"><span class="state done">유지보수</span></td>
+            </tr>
+            <tr>
+                <th scope="row" class="num">4</th>
+                <td data-label="사업명" class="name"><b>광주북구시설관리공단 회원관리시스템 개발</b></td>
+                <td data-label="기간" class="nowrap num">2024.08 ~ 2025.01</td>
+                <td data-label="추가 담당 범위">관리자 대관 기능, CMS</td>
+                <td data-label="상태"><span class="state done">유지보수·고도화</span></td>
+            </tr>
+            <tr>
+                <th scope="row" class="num">5</th>
+                <td data-label="사업명" class="name"><b>강동구도시관리공단 회원관리시스템 개발</b></td>
+                <td data-label="기간" class="nowrap num">2024.08 ~ 2024.12</td>
+                <td data-label="추가 담당 범위">관리자 정산·결제</td>
+                <td data-label="상태"><span class="state done">유지보수·고도화</span></td>
+            </tr>
+            </tbody>
+        </table>
 
+        <table class="form">
+            <tbody>
+            <tr>
+                <th scope="row">유지보수·<wbr>고도화</th>
+                <td>중랑구 · 강서구 · 광산구 · 강동구 · 광주북구 · 송파구 · 금천구 · 동작문화재단</td>
+            </tr>
+            </tbody>
+        </table>
+        <p class="end">― 이하 여백 ―</p>
+    </section>
 
+    <!-- 별지 2 -->
+    <section class="sheet" id="sheet-cases" aria-labelledby="cases-title">
+        <div class="sheet-meta"><span>[별지 제2호 서식]</span><span class="tnum">(7쪽 중 3쪽)</span></div>
+        <h2 id="cases-title">문제 해결 사례</h2>
+        <p class="lead">증상이 나타난 화면에서 멈추지 않고, 데이터와 외부 연동을 포함한 처리 흐름 전체를 확인한 뒤 고쳤습니다.</p>
 
+        <article class="case" aria-labelledby="case-1">
+            <h3 id="case-1"><span class="no">사안 <span class="tnum">1</span></span>문화비 소득공제 분납 결제의 가맹점 정보 불일치</h3>
+            <table class="form">
+                <tbody>
+                <tr>
+                    <th scope="row">증상</th>
+                    <td>분납 결제의 후속 결제가 잘못된 가맹점 ID로 요청되고, 취소할 때도 승인 당시와 다른 가맹점 정보가 사용됨</td>
+                </tr>
+                <tr>
+                    <th scope="row">원인</th>
+                    <td>취소 로직이 실제 승인에 쓰인 가맹점 ID가 아니라 현재 설정값을 참조했고, 결제 요청 전에 상품의 소득공제 대상 여부와 가맹점 정보를 확인하지 않음</td>
+                </tr>
+                <tr>
+                    <th scope="row">조치</th>
+                    <td>취소 시 승인에 사용된 가맹점 ID를 참조하도록 수정하고, 결제 요청 전 소득공제 대상 여부와 가맹점 정보의 정합성을 검증하는 로직 추가</td>
+                </tr>
+                <tr>
+                    <th scope="row">검증</th>
+                    <td>실제 결제 테스트로 승인·취소가 같은 가맹점으로 처리되는 것을 확인</td>
+                </tr>
+                <tr>
+                    <th scope="row">관련 사업</th>
+                    <td><a href="#sheet-projects" class="xref">별지 제1호 2번 · 금천구시설관리공단</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
 
+        <article class="case" aria-labelledby="case-2">
+            <h3 id="case-2"><span class="no">사안 <span class="tnum">2</span></span>운영 통계 화면 504 Gateway Timeout</h3>
+            <table class="form">
+                <tbody>
+                <tr>
+                    <th scope="row">증상</th>
+                    <td>운영 통계 조회가 90초 이상 걸려 게이트웨이 타임아웃(504) 발생</td>
+                </tr>
+                <tr>
+                    <th scope="row">원인</th>
+                    <td>쿼리 실행계획과 호출 구조를 분석한 결과, DB 함수 파라미터의 문자셋 불일치로 인덱스가 사용되지 않았고, 해당 쿼리가 <b class="tnum">312회</b> 반복 호출되고 있었음</td>
+                </tr>
+                <tr>
+                    <th scope="row">조치</th>
+                    <td>함수 파라미터의 문자셋을 테이블과 일치시켜 인덱스를 타도록 수정</td>
+                </tr>
+                <tr>
+                    <th scope="row">결과</th>
+                    <td><span class="delta"><s>90초 이상</s> → 수초 이내</span><span class="sub">수정 후 재측정으로 확인</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
 
-</section>
-</div>
-<div style="position:fixed; bottom: 5px; right: 5px;"><a href="#main" style="color: black">TOP</a></div>
+    <!-- 별지 3 -->
+    <section class="sheet" id="sheet-integrations" aria-labelledby="integrations-title">
+        <div class="sheet-meta"><span>[별지 제3호 서식]</span><span class="tnum">(7쪽 중 4쪽)</span></div>
+        <h2 id="integrations-title">외부 연동 내역</h2>
+        <table class="form">
+            <thead><tr><th scope="col">구분</th><th scope="col">대상</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">PG / VAN 결제</th><td>스마트로, 나이스페이먼츠 등</td></tr>
+            <tr><th scope="row">본인인증</th><td>KMC모바일, 로그인톡, 비즈사이렌 등</td></tr>
+            <tr><th scope="row">비대면 자격확인</th><td>행정정보공동이용센터</td></tr>
+            <tr><th scope="row">시민카드</th><td>서울시민카드 (프로시저 방식)</td></tr>
+            <tr><th scope="row">간편인증</th><td>1280X Passwordless</td></tr>
+            <tr><th scope="row">현장 단말</th><td>키오스크 API</td></tr>
+            </tbody>
+        </table>
+        <p class="end">― 이하 여백 ―</p>
+    </section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><h3><a href="https://github.com/jgsjss" class="icon brands fa-github"><span style="margin-left: 10px">https://github.com/jgsjss</span></a></h3></li>
-                    </ul>
-                    <ul class="icons">
-                        <li><h3 class="icon solid fa-envelope"><span style="margin-left: 10px">jgsjss9854@naver.com</span></h3>  </li>
-                    </ul>
-					<ul class="icons">
-                        <li>
-                            <h3 class="icon solid fa-mobile-alt"><span style="margin-left: 10px">010-3835-9854</span></h3>
+    <!-- 별지 4 -->
+    <section class="sheet" id="sheet-skills" aria-labelledby="skills-title">
+        <div class="sheet-meta"><span>[별지 제4호 서식]</span><span class="tnum">(7쪽 중 5쪽)</span></div>
+        <h2 id="skills-title">기술 · 업무 방식</h2>
+        <table class="form">
+            <tbody>
+            <tr>
+                <th scope="row">백엔드</th>
+                <td>Java · Spring · 전자정부프레임워크 · MyBatis</td>
+            </tr>
+            <tr>
+                <th scope="row">데이터</th>
+                <td>MariaDB · SQL · 실행계획 분석</td>
+            </tr>
+            <tr>
+                <th scope="row">화면</th>
+                <td>JavaScript · jQuery · JSP · Vue.js (이전 경력)</td>
+            </tr>
+            <tr>
+                <th scope="row">운영</th>
+                <td>서버 배포, 운영 장애 대응, 유지보수</td>
+            </tr>
+            <tr>
+                <th scope="row">AI 도구</th>
+                <td>Claude Code와 Codex로 기존 코드 분석, 기능 개발, 장애 원인을 추적합니다. 제안된 변경은 업무 규칙에 맞는지 직접 검토하고, 결제·정산 기능은 로그, 실행계획, 실제 단말 테스트로 확인합니다.</td>
+            </tr>
+            <tr>
+                <th scope="row">기록</th>
+                <td>해결한 문제를 사내 트러블슈팅 DB에 기록합니다. 두 달 동안 약 <b class="tnum">80건</b>의 이슈와 해결 과정을 정리했습니다.</td>
+            </tr>
+            <tr>
+                <th scope="row">학력</th>
+                <td>한국방송통신대학교 컴퓨터과학과 4학년 재학 <span class="sub">운영체제, 네트워크, 데이터베이스</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
 
-                        </li>
-                    </ul>
-				</div>
-			</footer>
+    <!-- 별지 5 -->
+    <section class="sheet" id="sheet-archive" aria-labelledby="archive-title">
+        <div class="sheet-meta"><span>[별지 제5호 서식]</span><span class="tnum">(7쪽 중 6쪽)</span></div>
+        <h2 id="archive-title">학습 기록</h2>
+        <table class="form stack">
+            <thead><tr><th scope="col">주제</th><th scope="col">사용 기술</th><th scope="col">링크</th></tr></thead>
+            <tbody>
+            <tr>
+                <td data-label="주제"><b>맛집 소개 웹서비스</b><span class="sub">학원 팀 프로젝트, AWS 배포</span></td>
+                <td data-label="사용 기술">Spring Boot, Thymeleaf, JPA</td>
+                <td data-label="링크"><a href="https://github.com/jgsjss/bmjWhere" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.youtube.com/watch?v=VdNn3VVzpdU" target="_blank" rel="noopener">시연 영상</a></td>
+            </tr>
+            <tr>
+                <td data-label="주제"><b>피크닉 용품 쇼핑몰</b><span class="sub">GCP 인스턴스의 MariaDB 연동</span></td>
+                <td data-label="사용 기술">Servlet, JSP, MariaDB</td>
+                <td data-label="링크"><a href="https://github.com/jgsjss/Market-main" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.youtube.com/watch?v=FwIp1h5cpxY" target="_blank" rel="noopener">시연 영상</a></td>
+            </tr>
+            <tr>
+                <td data-label="주제"><b>서블릿 계산기</b></td>
+                <td data-label="사용 기술">Servlet</td>
+                <td data-label="링크"><a href="https://github.com/jgsjss/servCalc" target="_blank" rel="noopener">GitHub</a></td>
+            </tr>
+            <tr>
+                <td data-label="주제"><b>Todo 앱 / SPA</b><span class="sub">백엔드·프론트 분리 구조</span></td>
+                <td data-label="사용 기술">Node.js, Express, MongoDB, Vue.js</td>
+                <td data-label="링크"><a href="https://github.com/jgsjss/TODOAPP" target="_blank" rel="noopener">TodoApp</a> · <a href="https://github.com/jgsjss/ding" target="_blank" rel="noopener">ding</a> · <a href="https://github.com/jgsjss/dong" target="_blank" rel="noopener">dong</a></td>
+            </tr>
+            <tr>
+                <td data-label="주제"><b>Vue 토이 프로젝트</b><span class="sub">블로그, 인스타그램, 부동산</span></td>
+                <td data-label="사용 기술">Vue.js, Vuex</td>
+                <td data-label="링크"><a href="https://jgsjss.github.io/vlog" target="_blank" rel="noopener">vlog</a> · <a href="https://jgsjss.github.io/stargram" target="_blank" rel="noopener">stargram</a> · <a href="https://jgsjss.github.io/vudongsan" target="_blank" rel="noopener">vudongsan</a></td>
+            </tr>
+            </tbody>
+        </table>
+        <p class="end">― 이하 여백 ―</p>
+    </section>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.poptrox.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+    <!-- 연락처 -->
+    <section class="sheet contact" id="sheet-contact" aria-labelledby="contact-title">
+        <div class="sheet-meta"><span>[문의처]</span><span class="tnum">(7쪽 중 7쪽)</span></div>
+        <h2 id="contact-title">연락처</h2>
+        <dl>
+            <dt>이메일</dt>
+            <dd><a href="mailto:jgsjss9854@naver.com">jgsjss9854@naver.com</a></dd>
+            <dt>휴대폰</dt>
+            <dd><a href="tel:010-3835-9854" class="tnum">010-3835-9854</a></dd>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/jgsjss" target="_blank" rel="noopener">github.com/jgsjss</a></dd>
+        </dl>
+        <p class="note">이 페이지는 공식 발급 문서가 아니라 본인이 경력확인서 형식으로 작성한 포트폴리오입니다.</p>
+    </section>
 
+</main>
+
+<script src="assets/js/site.js"></script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T23:12:06.601Z",
+        "reason": "Claude: section.sheet has padding clamp(20px,4.5vw,64px); desktop and 390px screenshots show 20-64px inset, detector does not resolve it"
+      }
+    ]
+  }
+}

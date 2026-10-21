@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T23:22:16.647Z",
+  "title": "Design System: 전광수 포트폴리오",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Security Green Paper",
+        "canonical": "#e6eee7",
+        "tonalRamp": [
+          "oklch(15% 0.012 150)",
+          "oklch(26% 0.012 150)",
+          "oklch(38% 0.012 150)",
+          "oklch(49% 0.012 150)",
+          "oklch(61% 0.012 150)",
+          "oklch(72% 0.012 150)",
+          "oklch(84% 0.012 150)",
+          "oklch(95% 0.012 150)"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Sheet White",
+        "canonical": "#f6f9f5",
+        "tonalRamp": [
+          "oklch(15% 0.006 140)",
+          "oklch(26% 0.006 140)",
+          "oklch(38% 0.006 140)",
+          "oklch(49% 0.006 140)",
+          "oklch(61% 0.006 140)",
+          "oklch(72% 0.006 140)",
+          "oklch(84% 0.006 140)",
+          "oklch(95% 0.006 140)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Form Ink",
+        "canonical": "#1b2430",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Faded Ink",
+        "canonical": "#46525f",
+        "tonalRamp": [
+          "oklch(15% 0.025 250)",
+          "oklch(26% 0.025 250)",
+          "oklch(38% 0.025 250)",
+          "oklch(49% 0.025 250)",
+          "oklch(61% 0.025 250)",
+          "oklch(72% 0.025 250)",
+          "oklch(84% 0.025 250)",
+          "oklch(95% 0.025 250)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Form Ink (rules)",
+        "canonical": "#1b2430",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "rule-soft": {
+        "role": "neutral",
+        "displayName": "Pale Rule",
+        "canonical": "#9fb2a6",
+        "tonalRamp": [
+          "oklch(15% 0.025 155)",
+          "oklch(26% 0.025 155)",
+          "oklch(38% 0.025 155)",
+          "oklch(49% 0.025 155)",
+          "oklch(61% 0.025 155)",
+          "oklch(72% 0.025 155)",
+          "oklch(84% 0.025 155)",
+          "oklch(95% 0.025 155)"
+        ]
+      },
+      "cell": {
+        "role": "neutral",
+        "displayName": "Header Tint",
+        "canonical": "#d7e3da",
+        "tonalRamp": [
+          "oklch(15% 0.017 155)",
+          "oklch(26% 0.017 155)",
+          "oklch(38% 0.017 155)",
+          "oklch(49% 0.017 155)",
+          "oklch(61% 0.017 155)",
+          "oklch(72% 0.017 155)",
+          "oklch(84% 0.017 155)",
+          "oklch(95% 0.017 155)"
+        ]
+      },
+      "seal": {
+        "role": "secondary",
+        "displayName": "Seal Vermilion",
+        "canonical": "#c4302b",
+        "tonalRamp": [
+          "oklch(15% 0.19 28)",
+          "oklch(26% 0.19 28)",
+          "oklch(38% 0.19 28)",
+          "oklch(49% 0.19 28)",
+          "oklch(61% 0.19 28)",
+          "oklch(72% 0.19 28)",
+          "oklch(84% 0.19 28)",
+          "oklch(95% 0.19 28)"
+        ]
+      },
+      "link": {
+        "role": "primary",
+        "displayName": "Ballpoint Blue",
+        "canonical": "#1f4fa3",
+        "tonalRamp": [
+          "oklch(15% 0.15 260)",
+          "oklch(26% 0.15 260)",
+          "oklch(38% 0.15 260)",
+          "oklch(49% 0.15 260)",
+          "oklch(61% 0.15 260)",
+          "oklch(72% 0.15 260)",
+          "oklch(84% 0.15 260)",
+          "oklch(95% 0.15 260)"
+        ]
+      },
+      "link-hover": {
+        "role": "primary",
+        "displayName": "Pressed Blue",
+        "canonical": "#143a7d",
+        "tonalRamp": [
+          "oklch(15% 0.12 260)",
+          "oklch(26% 0.12 260)",
+          "oklch(38% 0.12 260)",
+          "oklch(49% 0.12 260)",
+          "oklch(61% 0.12 260)",
+          "oklch(72% 0.12 260)",
+          "oklch(84% 0.12 260)",
+          "oklch(95% 0.12 260)"
+        ]
+      },
+      "guilloche": {
+        "role": "neutral",
+        "displayName": "Guilloche Green",
+        "canonical": "rgb(38,104,84)",
+        "tonalRamp": [
+          "oklch(15% 0.07 170)",
+          "oklch(26% 0.07 170)",
+          "oklch(38% 0.07 170)",
+          "oklch(49% 0.07 170)",
+          "oklch(61% 0.07 170)",
+          "oklch(72% 0.07 170)",
+          "oklch(84% 0.07 170)",
+          "oklch(95% 0.07 170)"
+        ],
+        "note": "Stroke color of the runtime-generated guilloche tile (stroke-opacity .09) and certificate rosette (stroke-opacity .14) in assets/js/site.js; not a CSS custom property."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The document title 경력확인서, once, on the certificate sheet. text-indent matches letter-spacing; 0.3em under 720px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Centered, wide-tracked title of each attached sheet (별지)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Case headings inside a sheet, with a smaller Faded Ink 사안 N prefix."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "The one emphasized value inside a form cell (the applicant's name)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Cell text and paragraphs; 16px under 720px; word-break keep-all; leads cap at 70ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Table header cells, contact labels, index links."
+      },
+      "number": {
+        "displayName": "Number",
+        "purpose": "Document identifiers such as the confirmation number; other figures stay in NanumSquare with tabular-nums."
+      }
+    },
+    "shadows": [
+      {
+        "name": "paper-lift",
+        "value": "0 1px 2px rgba(27, 36, 48, 0.08), 0 14px 32px -12px rgba(27, 36, 48, 0.22)",
+        "purpose": "Every sheet lifting off the paper background; removed in print."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-stamp",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Seal stamp on load: 0.55s, 0.5s delay, from scale 1.7 / -12deg / blur 3px to scale 1 / -5deg. Disabled under prefers-reduced-motion."
+      },
+      {
+        "name": "ease-state",
+        "value": "0.2s ease-out",
+        "purpose": "Button background and color transitions."
+      },
+      {
+        "name": "scroll",
+        "value": "scroll-behavior: smooth",
+        "purpose": "In-page sheet navigation; auto under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "720px"
+      }
+    ],
+    "borders": [
+      {
+        "name": "sheet-frame",
+        "value": "border: 2px solid ink; outline: 1px solid ink; outline-offset: -8px (-6px under 720px)",
+        "purpose": "Double certificate frame on every sheet."
+      },
+      {
+        "name": "form-rules",
+        "value": "2px outer, 1px inner, ink",
+        "purpose": "Every form table and the contact list."
+      },
+      {
+        "name": "state-live",
+        "value": "3px double currentColor",
+        "purpose": "In-progress state stamp."
+      }
+    ],
+    "textures": [
+      {
+        "name": "guilloche-tile",
+        "value": "240x96 SVG tile: 4 bands x 5 strands of opposed sine pairs, stroke .6, opacity .09",
+        "purpose": "Background of every sheet (--guilloche-bg, set on :root at runtime)."
+      },
+      {
+        "name": "rosette",
+        "value": "640x240 SVG: 16 rotated petal rings, stroke .6, opacity .14",
+        "purpose": "Centered behind the certificate title only (--rosette-bg)."
+      },
+      {
+        "name": "ink-filter",
+        "value": "feTurbulence fractalNoise 0.9 / 2 octaves + feDisplacementMap scale 2.4",
+        "purpose": "Stamped-ink edge on the seal."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled blue action, used for the main call to read the cases.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M8 2v11M3.5 8.5 8 13l4.5-4.5\"/></svg>문제 해결 사례 보기</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border: 1.5px solid var(--link, #1f4fa3); border-radius: 2px; font-family: \"NanumSquare\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", sans-serif; font-weight: 700; font-size: 15px; text-decoration: none; color: var(--link, #1f4fa3); background: transparent; transition: background-color .2s ease-out, color .2s ease-out; } .ds-btn svg { width: 16px; height: 16px; } .ds-btn:focus-visible { outline: 2px solid var(--link, #1f4fa3); outline-offset: 3px; } .ds-btn-primary { background: var(--link, #1f4fa3); color: var(--sheet, #f6f9f5); } .ds-btn-primary:hover { background: var(--link-hover, #143a7d); border-color: var(--link-hover, #143a7d); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined blue action that fills on hover.",
+      "html": "<a class=\"ds-btn2\" href=\"#\">연락하기</a>",
+      "css": ".ds-btn2 { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border: 1.5px solid var(--link, #1f4fa3); border-radius: 2px; font-family: \"NanumSquare\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", sans-serif; font-weight: 700; font-size: 15px; text-decoration: none; color: var(--link, #1f4fa3); background: transparent; transition: background-color .2s ease-out, color .2s ease-out; } .ds-btn2:hover { background: var(--link, #1f4fa3); color: var(--sheet, #f6f9f5); } .ds-btn2:focus-visible { outline: 2px solid var(--link, #1f4fa3); outline-offset: 3px; }"
+    },
+    {
+      "name": "Form Table",
+      "kind": "custom",
+      "refersTo": "form-header-cell",
+      "description": "The universal ruled container: tinted header cells, ink rules, sub-lines and before/after deltas.",
+      "html": "<table class=\"ds-form\"><tbody><tr><th scope=\"row\">성명</th><td><span class=\"ds-big\">전광수</span><span class=\"ds-sub\">Java · Spring 백엔드 개발자</span></td></tr><tr><th scope=\"row\">개선 실적</th><td>운영 통계 조회 <span class=\"ds-delta\"><s>90초 이상</s> → 수초 이내</span></td></tr><tr><th scope=\"row\">관련 사업</th><td><a href=\"#\">별지 제1호 2번</a></td></tr></tbody></table>",
+      "css": ".ds-form { width: 100%; border-collapse: collapse; border: 2px solid var(--ink, #1b2430); font-family: \"NanumSquare\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", sans-serif; font-size: 17px; line-height: 1.75; color: var(--ink, #1b2430); background: var(--sheet, #f6f9f5); } .ds-form th, .ds-form td { border: 1px solid var(--ink, #1b2430); padding: 12px 16px; text-align: left; vertical-align: top; } .ds-form th { background: var(--cell, #d7e3da); font-weight: 700; white-space: nowrap; width: 1%; letter-spacing: 0.08em; } .ds-big { font-size: 28px; font-weight: 800; line-height: 1.35; } .ds-sub { display: block; color: var(--ink-soft, #46525f); font-size: 0.92em; } .ds-delta { display: inline-flex; gap: 4px 10px; font-weight: 800; } .ds-delta s { color: var(--ink-soft, #46525f); font-weight: 700; text-decoration-thickness: 2px; } .ds-form a { color: var(--link, #1f4fa3); text-underline-offset: 0.22em; text-decoration-thickness: 1px; } .ds-form a:hover { color: var(--link-hover, #143a7d); text-decoration-thickness: 2px; } .ds-form a:focus-visible { outline: 2px solid var(--link, #1f4fa3); outline-offset: 3px; }"
+    },
+    {
+      "name": "State Stamps",
+      "kind": "chip",
+      "refersTo": "form-data-cell",
+      "description": "Square status boxes: double-bordered live, single-bordered done.",
+      "html": "<span class=\"ds-state ds-live\">진행중</span> <span class=\"ds-state ds-done\">납품 완료</span>",
+      "css": ".ds-state { display: inline-block; padding: 0 8px; border: 1px solid currentColor; font-family: \"NanumSquare\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", sans-serif; font-size: 13px; font-weight: 700; white-space: nowrap; } .ds-live { color: var(--ink, #1b2430); font-weight: 800; border-style: double; border-width: 3px; } .ds-done { color: var(--ink-soft, #46525f); }"
+    },
+    {
+      "name": "Sheet Index",
+      "kind": "nav",
+      "refersTo": "index-link",
+      "description": "Sticky translucent bar listing the attached sheets; current sheet in blue with an underline bar.",
+      "html": "<nav class=\"ds-index\"><ol><li><a href=\"#\">경력확인서</a></li><li><a href=\"#\" aria-current=\"true\">별지 1 · 구축 사업</a></li><li><a href=\"#\">별지 2 · 문제 해결</a></li><li><a href=\"#\">연락처</a></li></ol></nav>",
+      "css": ".ds-index { background: color-mix(in srgb, var(--paper, #e6eee7) 92%, transparent); border-bottom: 1px solid var(--rule-soft, #9fb2a6); backdrop-filter: saturate(1.2) blur(6px); } .ds-index ol { list-style: none; margin: 0; padding: 0 16px; display: flex; gap: 4px; overflow-x: auto; } .ds-index a { display: block; padding: 12px 12px 10px; font-family: \"NanumSquare\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", sans-serif; font-size: 14px; font-weight: 700; color: var(--ink-soft, #46525f); text-decoration: none; border-bottom: 2px solid transparent; } .ds-index a:hover, .ds-index a[aria-current=\"true\"] { color: var(--link, #1f4fa3); border-bottom-color: var(--link, #1f4fa3); } .ds-index a:focus-visible { outline: 2px solid var(--link, #1f4fa3); outline-offset: 3px; }"
+    },
+    {
+      "name": "Sheet",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "An attached sheet: double ink frame, paper lift, form-number meta line, tracked centered title, end mark.",
+      "html": "<section class=\"ds-sheet\"><div class=\"ds-meta\"><span>[별지 제3호 서식]</span><span>(7쪽 중 4쪽)</span></div><h2>외부 연동 내역</h2><p class=\"ds-end\">― 이하 여백 ―</p></section>",
+      "css": ".ds-sheet { padding: 32px; background: var(--sheet, #f6f9f5); border: 2px solid var(--ink, #1b2430); outline: 1px solid var(--ink, #1b2430); outline-offset: -8px; box-shadow: 0 1px 2px rgba(27, 36, 48, 0.08), 0 14px 32px -12px rgba(27, 36, 48, 0.22); font-family: \"NanumSquare\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", sans-serif; color: var(--ink, #1b2430); } .ds-meta { display: flex; justify-content: space-between; gap: 4px 24px; font-size: 14px; color: var(--ink-soft, #46525f); font-variant-numeric: tabular-nums; } .ds-sheet h2 { margin: 24px 0 20px; font-size: 30px; font-weight: 800; letter-spacing: 0.18em; text-align: center; } .ds-end { margin: 10px 0 0; text-align: center; font-size: 13px; letter-spacing: 0.3em; color: var(--ink-soft, #46525f); }"
+    },
+    {
+      "name": "Seal",
+      "kind": "custom",
+      "refersTo": "sheet",
+      "description": "The single red name seal, rotated -5deg as if hand-stamped.",
+      "html": "<span class=\"ds-seal\" role=\"img\" aria-label=\"전광수 인장\"><svg viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"5\" y=\"5\" width=\"90\" height=\"90\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/><g fill=\"currentColor\" font-family=\"NanumSquare, sans-serif\" font-weight=\"800\" font-size=\"34\" text-anchor=\"middle\"><text x=\"31\" y=\"45\">전</text><text x=\"69\" y=\"45\">광</text><text x=\"31\" y=\"84\">수</text><text x=\"69\" y=\"84\">인</text></g></svg></span>",
+      "css": ".ds-seal { display: inline-block; width: 92px; height: 92px; color: var(--seal, #c4302b); transform: rotate(-5deg); } .ds-seal svg { width: 100%; height: 100%; display: block; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Issued Certificate",
+    "overview": "Every surface is a sheet of official paper issued by a public institution: pale green security stock with a fine guilloche line pattern, navy-black ink, ruled tables with tinted header cells, a form number and page count at the top of each sheet, and one red name seal. The system borrows its authority from the document form itself, so nothing is decorated beyond what such a document would carry. Information lives in ruled forms, not in cards, badges, or panels.\n\nDensity is that of a filled-in form: compact rows, generous body leading (1.75), headings spaced wide like the printed titles of Korean administrative forms. The page is a stack of sheets on a green desk, each one an 별지 (attached sheet) numbered in sequence, ending with \"― 이하 여백 ―\" where the form has nothing more to say. Color carries meaning, not mood: ink for content, blue only for things you can click, red only for the seal.\n\nRejected outright by the direction: the dark hero, skill-badge clouds, and project-card grids of the generic developer portfolio.",
+    "keyCharacteristics": [
+      "Security-paper sheets with runtime-generated guilloche bands and a rosette behind the first sheet's title.",
+      "Ruled form tables (2px outer rule, 1px inner rules, tinted header cells) as the only content container.",
+      "Wide-tracked, centered, extra-bold gothic titles; tabular numerals for every figure and date.",
+      "Blue ink reserved for interaction; a single red seal per page.",
+      "Square corners everywhere except a barely softened button (2px)."
+    ],
+    "rules": [
+      {
+        "name": "The Blue Ink Rule",
+        "body": "Blue means clickable. If an element is not interactive it is never blue, and every interactive element is.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Seal Rule",
+        "body": "Seal Vermilion appears exactly once per page, as the name seal. It is not an accent color, an alert color, or a highlight.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Every date, period, count, page number, and row number uses tabular numerals (`font-variant-numeric: tabular-nums`). Figures line up like a ledger.",
+        "section": "typography"
+      },
+      {
+        "name": "The Form Title Rule",
+        "body": "Titles are centered and tracked wide, the way printed form titles are; body text is never tracked.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Lift Rule",
+        "body": "Only the sheet casts a shadow. Tables, buttons, stamps, and the seal sit flat on the paper.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Corner Rule",
+        "body": "Containers are rectangles. A radius above 2px belongs only to the seal.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do put every set of facts in a ruled form table with tinted header cells (2px outer, 1px inner rules).",
+      "Do start each sheet with its meta line (form number and \"(N쪽 중 M쪽)\") and close short forms with \"― 이하 여백 ―\".",
+      "Do set every date, period, count, and row number in tabular numerals.",
+      "Do use Ballpoint Blue for every link, button, and the focus ring, and for nothing else.",
+      "Do keep the guilloche and rosette at their faint opacities (9% and 14%) so text contrast is untouched.",
+      "Do keep the seal stamp a one-time, reduced-motion-safe animation."
+    ],
+    "donts": [
+      "Don't use a dark hero, skill-badge clouds, or a grid of project cards.",
+      "Don't use Seal Vermilion anywhere except the single name seal.",
+      "Don't give containers rounded corners or their own shadows; only sheets lift.",
+      "Don't track body text; wide tracking is for display and sheet titles.",
+      "Don't color non-interactive text blue."
+    ]
+  }
+}
