@@ -207,19 +207,67 @@
                 <tbody>
                 <tr>
                     <th scope="row">증상</th>
-                    <td>운영 통계 조회가 90초 이상 걸려 게이트웨이 타임아웃(504) 발생</td>
+                    <td>관리자 통계 화면 진입 시 504 발생. WAS 로그에는 예외가 남지 않음</td>
                 </tr>
                 <tr>
                     <th scope="row">원인</th>
-                    <td>쿼리 실행계획과 호출 구조를 분석한 결과, DB 함수 파라미터의 문자셋 불일치로 인덱스가 사용되지 않았고, 해당 쿼리가 <b class="tnum">312회</b> 반복 호출되고 있었음</td>
+                    <td>강습반마다 호출되는 DB 함수(<b class="tnum">312회</b>)의 파라미터는 utf8mb4, 조인 컬럼은 utf8mb3여서 컬럼 쪽이 변환되며 인덱스가 빠짐. 실행계획에서 <span class="tnum">key_len 95 → 62</span>, 예상 행 <span class="tnum">1 → 253,118</span> 확인. 호출당 250~400ms가 쌓여 90~125초가 걸렸고, nginx 타임아웃(약 60초)을 넘어 504가 났지만 WAS는 계속 처리 중이라 에러가 없었음</td>
                 </tr>
                 <tr>
                     <th scope="row">조치</th>
-                    <td>함수 파라미터의 문자셋을 테이블과 일치시켜 인덱스를 타도록 수정</td>
+                    <td>함수 로직과 반환값은 그대로 두고 파라미터 문자셋만 컬럼과 일치시켜 재정의</td>
                 </tr>
                 <tr>
                     <th scope="row">결과</th>
-                    <td><span class="delta"><s>90초 이상</s> → 수초 이내</span><span class="sub">수정 후 재측정으로 확인</span></td>
+                    <td><span class="delta"><s>90초 이상</s> → 수초 이내</span><span class="sub">재측정과 실제 화면 정상 로드로 확인. 같은 유형의 다른 함수도 점검 대상으로 정리</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="case" aria-labelledby="case-3">
+            <h3 id="case-3"><span class="no">사안 <span class="tnum">3</span></span>온라인 결제 승인 직후 자동취소 반복</h3>
+            <table class="form">
+                <tbody>
+                <tr>
+                    <th scope="row">증상</th>
+                    <td>PG 승인 성공 1~3초 뒤 결제가 자동취소됨. 같은 시간대에 성공 건이 섞여 있어 무작위 장애처럼 보임. 자동취소가 성공해 금전 피해는 없었음</td>
+                </tr>
+                <tr>
+                    <th scope="row">원인</th>
+                    <td>WAS 로그에서 매출 저장 시 전표번호 중복키 오류를 확인하고, 운영 DB의 충돌 번호를 대조함. 같은 전표번호 공간에 웹은 영수번호 시퀀스로, 창구·키오스크는 전표 시퀀스로 각각 번호를 발급하고 있었음. 뒤처진 웹 시퀀스가 창구가 이미 쓴 구간에 들어서면서 기존 번호와 겹치면 실패, 빈 번호면 성공하는 구조였음</td>
+                </tr>
+                <tr>
+                    <th scope="row">조치</th>
+                    <td>웹도 창구와 같은 전표 시퀀스로 채번하고 영수번호는 따로 발급하도록 분리. 영수번호를 전표 역조회 키로 쓰는 쿼리가 있어 두 값을 합치지 않음. 당일 운영 배포</td>
+                </tr>
+                <tr>
+                    <th scope="row">검증</th>
+                    <td>배포 직후 실결제로 두 번호가 각자의 대역에서 발급되는 것을 확인하고, 자동취소 건수 모니터링 쿼리를 남김. 방치했다면 겹치는 약 5,900개 구간을 지나는 2~3주 동안 웹 결제 대부분이 실패할 상황이었음</td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="case" aria-labelledby="case-4">
+            <h3 id="case-4"><span class="no">사안 <span class="tnum">4</span></span>모바일 결제만 간헐적으로 실패</h3>
+            <table class="form">
+                <tbody>
+                <tr>
+                    <th scope="row">증상</th>
+                    <td>모바일에서만 "결제 회원정보 불일치"로 실패. PC는 정상이고, 같은 기기에서도 몇 분 간격으로 성공과 실패가 갈림. 승인 전 검증에서 막혀 과금 피해는 없었음</td>
+                </tr>
+                <tr>
+                    <th scope="row">원인</th>
+                    <td>로그상 실패 전부가 모바일 결제창에서 돌아오는 요청 직후에 발생. 모바일은 PG 도메인에서 cross-site POST로 복귀하는데, 세션쿠키에 SameSite가 없어 크로미움 계열 브라우저가 Lax 기본값으로 쿠키를 보내지 않음. 쿠키 발급 2분 이내에는 예외적으로 전송되는 규칙 때문에, 결제창에서 오래 머문 경우에만 실패했음</td>
+                </tr>
+                <tr>
+                    <th scope="row">조치</th>
+                    <td>nginx에서 세션쿠키에 <span class="tnum">Secure; SameSite=None</span>을 부여하고 무중단 reload. 애플리케이션 재배포 없음</td>
+                </tr>
+                <tr>
+                    <th scope="row">검증</th>
+                    <td>응답 헤더와 모바일 실결제로 확인. SameSite=None으로 넓어진 CSRF 노출면을 줄이기 위해 보안 예외 경로를 결제 복귀 경로로만 좁히는 후속 과제를 정리함</td>
                 </tr>
                 </tbody>
             </table>
