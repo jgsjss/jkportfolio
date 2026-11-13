@@ -25,10 +25,11 @@
     <ol>
         <li><a href="#sheet-cert">경력확인서</a></li>
         <li><a href="#sheet-projects">별지 1 · 구축 사업</a></li>
-        <li><a href="#sheet-cases">별지 2 · 문제 해결</a></li>
-        <li><a href="#sheet-integrations">별지 3 · 외부 연동</a></li>
-        <li><a href="#sheet-skills">별지 4 · 기술·업무 방식</a></li>
-        <li><a href="#sheet-archive">별지 5 · 학습 기록</a></li>
+        <li><a href="#sheet-ai">별지 2 · AI 도구 활용 개발</a></li>
+        <li><a href="#sheet-cases">별지 3 · 문제 해결</a></li>
+        <li><a href="#sheet-integrations">별지 4 · 외부 연동</a></li>
+        <li><a href="#sheet-skills">별지 5 · 기술·업무 방식</a></li>
+        <li><a href="#sheet-archive">별지 6 · 학습 기록</a></li>
         <li><a href="#sheet-contact">연락처</a></li>
     </ol>
 </nav>
@@ -39,7 +40,7 @@
     <section class="sheet cert" id="sheet-cert" aria-labelledby="cert-title">
         <div class="sheet-meta">
             <span>확인번호 <span class="num">JGS-2022-0801</span></span>
-            <span>작성일 <span class="num">2026. 10. 22.</span> · <span class="tnum">(7쪽 중 1쪽)</span></span>
+            <span>작성일 <span class="num">2026. 11. 13.</span> · <span class="tnum">(8쪽 중 1쪽)</span></span>
         </div>
 
         <h1 id="cert-title">경력확인서</h1>
@@ -76,6 +77,10 @@
                     </ul>
                 </td>
             </tr>
+            <tr>
+                <th scope="row">AI 도구 활용</th>
+                <td>Claude Code · Codex로 신규 시스템 구축, 기능 개발, 업무 자동화 도구 제작 <a href="#sheet-ai" class="xref">별지 제2호 참조</a></td>
+            </tr>
             </tbody>
         </table>
         <p class="end">― 이하 여백 ―</p>
@@ -110,7 +115,7 @@
 
     <!-- 별지 1 -->
     <section class="sheet" id="sheet-projects" aria-labelledby="projects-title">
-        <div class="sheet-meta"><span>[별지 제1호 서식]</span><span class="tnum">(7쪽 중 2쪽)</span></div>
+        <div class="sheet-meta"><span>[별지 제1호 서식]</span><span class="tnum">(8쪽 중 2쪽)</span></div>
         <h2 id="projects-title">구축 사업 내역</h2>
         <p class="lead">모든 사업은 전자정부프레임워크 기반 유저 홈페이지 전반(로그인·회원가입, 온라인 수강·대관 신청, PG 결제, 키오스크 API 연동)을 공통으로 맡았습니다. 아래에는 사업마다 추가로 담당한 범위를 적었습니다.</p>
         <table class="form stack">
@@ -168,8 +173,163 @@
     </section>
 
     <!-- 별지 2 -->
+    <section class="sheet" id="sheet-ai" aria-labelledby="ai-title">
+        <div class="sheet-meta"><span>[별지 제2호 서식]</span><span class="tnum">(8쪽 중 3쪽)</span></div>
+        <h2 id="ai-title">AI 코딩 도구 활용 개발 내역</h2>
+        <p class="lead">요구사항 정리와 설계 결정은 직접 하고, 구현은 Claude Code와 Codex에 맡긴 뒤 결과를 검토하고 검증했습니다. 한 도구가 만든 설계와 코드는 다른 도구에 다시 검토시키고, 결제·정산처럼 돈이 걸린 기능은 테스트 코드, 실행계획, 실제 결제로 확인했습니다. 회사 소스는 비공개라 기능과 방식만 적었습니다.</p>
+
+        <article class="case" aria-labelledby="ai-1">
+            <h3 id="ai-1"><span class="no">항목 <span class="tnum">1</span></span>동작문화재단 통합예약시스템 구축</h3>
+            <table class="form">
+                <tbody>
+                <tr>
+                    <th scope="row">구분 · 기간</th>
+                    <td>신규 구축 · <span class="num">2026.08 ~ 2026.11</span> <a href="#sheet-projects" class="xref">별지 제1호 1번</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">사용 기술</th>
+                    <td>Java 21 · Spring Boot 3.5 · 전자정부프레임워크 5.0 · MyBatis · Thymeleaf · MariaDB · Docker<span class="sub">관리자 시스템은 Spring MVC · JSP</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">AI 도구</th>
+                    <td>Claude Code(설계 · 구현 · 테스트 작성), Codex(설계 · 코드 교차 검토)</td>
+                </tr>
+                <tr>
+                    <th scope="row">본인 담당</th>
+                    <td>이용자 홈페이지 전반과 관리자 결제 · 정산. 고객 요구사항을 설계 문서로 정리하고, 작업 단위로 나눠 구현을 지시한 뒤 결과를 검토 · 수정하고 서버에 배포</td>
+                </tr>
+                <tr>
+                    <th scope="row">주요 구현 기능</th>
+                    <td>
+                        <ul>
+                            <li>강좌 · 대관 · 공연 · 전시 접수와 PG 결제, 부분취소 · 환불</li>
+                            <li>공연 매수 한도를 전체 회차 합산 또는 회차별로 고르는 설정</li>
+                            <li>관리자 프로그램 취소를 원결제 보존 · 음수 전표 방식의 원장으로 전환</li>
+                            <li>오류 내용이 이용자 화면에 노출되지 않도록 예외 처리 방식 통일</li>
+                            <li>Docker 이미지 기반 배포 구성과 배포 · 롤백 매뉴얼</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">검증 · 기록</th>
+                    <td>단위 테스트 <b class="tnum">1,280건</b>, 테스트 가맹점으로 부분취소 실연동 확인. 설계 결정 <b class="tnum">110여 건</b>을 결정 기록으로 남겨 다음 작업의 기준으로 사용</td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="case" aria-labelledby="ai-2">
+            <h3 id="ai-2"><span class="no">항목 <span class="tnum">2</span></span>금천구시설관리공단 회원관리시스템 개발</h3>
+            <table class="form">
+                <tbody>
+                <tr>
+                    <th scope="row">구분 · 기간</th>
+                    <td>신규 구축 · <span class="num">2026.01 ~ 2026.06</span>, 이후 운영 · 고도화 <a href="#sheet-projects" class="xref">별지 제1호 2번</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">사용 기술</th>
+                    <td>Java · Spring · 전자정부프레임워크 · MyBatis · JSP · jQuery · MariaDB · Tomcat · Nginx<span class="sub">PG(온라인) · VAN 단말(창구) · 본인인증 · 키오스크 연동</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">AI 도구</th>
+                    <td>Claude Code(기존 코드 분석 · 설계 · 검토), Codex(구현)</td>
+                </tr>
+                <tr>
+                    <th scope="row">본인 담당</th>
+                    <td>이용자 홈페이지 전반과 문화비 소득공제 시스템. 기존 코드 분석과 설계, 구현 지시와 검토, 테스트 DB 대조와 실결제 확인, 운영 배포와 장애 대응</td>
+                </tr>
+                <tr>
+                    <th scope="row">주요 구현 기능</th>
+                    <td>
+                        <ul>
+                            <li>회원가입 · 본인인증 · 로그인, 온라인 수강 접수(정원 · 대기 처리)와 PG 결제</li>
+                            <li>문화비 소득공제 분납 결제와, 대상 강습을 일반 소득공제로 바꿔 결제하는 선택 기능(반대 방향은 차단)</li>
+                            <li>상품의 설정값과 실제 결제값을 나눠 저장해 취소 · 정산 · 단말 선택이 결제값을 따르도록 구성</li>
+                            <li>수익금 정산 화면과 엑셀에 소득공제 유형 · 결제수단별 조건과 집계 추가</li>
+                            <li>강좌 목록 잔여 인원 표시, 회원카드 QR, 이용약관 등 이용자 화면 기능</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">검증</th>
+                    <td>정산 합계를 세부 내역 · PG 내역과 대조하고, 창구 단말과 온라인에서 승인 · 취소를 직접 확인. 운영 중 장애는 로그와 실행계획으로 원인을 찾아 조치 <a href="#sheet-cases" class="xref">별지 제3호 참조</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="case" aria-labelledby="ai-3">
+            <h3 id="ai-3"><span class="no">항목 <span class="tnum">3</span> · 자동화</span>보고서 · 산출물 문서 변환 도구</h3>
+            <table class="form">
+                <tbody>
+                <tr>
+                    <th scope="row">사용 기술</th>
+                    <td>Node.js · Chrome DevTools Protocol · Python · PowerShell · 한글 오피스 COM 자동화</td>
+                </tr>
+                <tr>
+                    <th scope="row">AI 도구</th>
+                    <td>Claude Code</td>
+                </tr>
+                <tr>
+                    <th scope="row">본인 담당</th>
+                    <td>고객사에 내는 문서를 손으로 편집하던 일을 줄이려고 기획하고, 양식 규칙을 정해 도구로 제작</td>
+                </tr>
+                <tr>
+                    <th scope="row">주요 구현 기능</th>
+                    <td>
+                        <ul>
+                            <li>Markdown · HTML 원고를 회사 보고서 양식의 PDF로 변환(쪽번호, 머리글, 로고)</li>
+                            <li>상대가 채워서 회신하는 문서는 한글(.hwp) 파일로 변환하고, 결과 확인용 PDF를 함께 생성</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">활용</th>
+                    <td>개발 산출물 6권 <b class="tnum">103쪽</b>, 관리자 교육자료 <b class="tnum">127쪽</b>, 배포 매뉴얼과 고객 안내 자료 제작</td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="case" aria-labelledby="ai-4">
+            <h3 id="ai-4"><span class="no">항목 <span class="tnum">4</span> · 자동화</span>빌드 · 배포 · 검증 스크립트</h3>
+            <table class="form">
+                <tbody>
+                <tr>
+                    <th scope="row">사용 기술</th>
+                    <td>PowerShell · Bash · Docker · Maven · JUnit · SQL</td>
+                </tr>
+                <tr>
+                    <th scope="row">AI 도구</th>
+                    <td>Claude Code · Codex</td>
+                </tr>
+                <tr>
+                    <th scope="row">본인 담당</th>
+                    <td>반복하던 수작업과 실수 지점을 정리해 스크립트로 만들고, 다른 개발자가 쓸 수 있게 인계 문서와 함께 전달</td>
+                </tr>
+                <tr>
+                    <th scope="row">주요 구현 기능</th>
+                    <td>
+                        <ul>
+                            <li>버전을 입력하면 WAR 빌드, Docker 이미지 생성, 배포 파일 묶음과 해시까지 만드는 빌드 스크립트(버전 중복 방지, 실패 시 환경 복원)</li>
+                            <li>변경한 테스트 클래스만 골라 바로 실행하는 JUnit 실행 스크립트</li>
+                            <li>DB 이관용 사전 점검 · 스키마 · 기초 데이터 · 검증 SQL 묶음</li>
+                            <li>해결한 장애를 정해진 양식으로 트러블슈팅 DB에 남기는 기록 절차</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">검증</th>
+                    <td>빌드 스크립트는 실제 배포 전에 모의 시나리오 <b class="tnum">22개</b>로 확인. 운영 서버 배포에 사용 중</td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+    <!-- 별지 3 -->
     <section class="sheet" id="sheet-cases" aria-labelledby="cases-title">
-        <div class="sheet-meta"><span>[별지 제2호 서식]</span><span class="tnum">(7쪽 중 3쪽)</span></div>
+        <div class="sheet-meta"><span>[별지 제3호 서식]</span><span class="tnum">(8쪽 중 4쪽)</span></div>
         <h2 id="cases-title">문제 해결 사례</h2>
         <p class="lead">증상이 나타난 화면에서 멈추지 않고, 데이터와 외부 연동을 포함한 처리 흐름 전체를 확인한 뒤 고쳤습니다.</p>
 
@@ -274,9 +434,9 @@
         </article>
     </section>
 
-    <!-- 별지 3 -->
+    <!-- 별지 4 -->
     <section class="sheet" id="sheet-integrations" aria-labelledby="integrations-title">
-        <div class="sheet-meta"><span>[별지 제3호 서식]</span><span class="tnum">(7쪽 중 4쪽)</span></div>
+        <div class="sheet-meta"><span>[별지 제4호 서식]</span><span class="tnum">(8쪽 중 5쪽)</span></div>
         <h2 id="integrations-title">외부 연동 내역</h2>
         <table class="form">
             <thead><tr><th scope="col">구분</th><th scope="col">대상</th></tr></thead>
@@ -292,9 +452,9 @@
         <p class="end">― 이하 여백 ―</p>
     </section>
 
-    <!-- 별지 4 -->
+    <!-- 별지 5 -->
     <section class="sheet" id="sheet-skills" aria-labelledby="skills-title">
-        <div class="sheet-meta"><span>[별지 제4호 서식]</span><span class="tnum">(7쪽 중 5쪽)</span></div>
+        <div class="sheet-meta"><span>[별지 제5호 서식]</span><span class="tnum">(8쪽 중 6쪽)</span></div>
         <h2 id="skills-title">기술 · 업무 방식</h2>
         <table class="form">
             <tbody>
@@ -316,7 +476,7 @@
             </tr>
             <tr>
                 <th scope="row">AI 도구</th>
-                <td>Claude Code와 Codex로 기존 코드 분석, 기능 개발, 장애 원인을 추적합니다. 제안된 변경은 업무 규칙에 맞는지 직접 검토하고, 결제·정산 기능은 로그, 실행계획, 실제 단말 테스트로 확인합니다.</td>
+                <td>Claude Code와 Codex로 기존 코드 분석, 기능 개발, 장애 원인을 추적합니다. 제안된 변경은 업무 규칙에 맞는지 직접 검토하고, 결제·정산 기능은 로그, 실행계획, 실제 단말 테스트로 확인합니다. <a href="#sheet-ai" class="xref">별지 제2호 참조</a></td>
             </tr>
             <tr>
                 <th scope="row">기록</th>
@@ -330,9 +490,9 @@
         </table>
     </section>
 
-    <!-- 별지 5 -->
+    <!-- 별지 6 -->
     <section class="sheet" id="sheet-archive" aria-labelledby="archive-title">
-        <div class="sheet-meta"><span>[별지 제5호 서식]</span><span class="tnum">(7쪽 중 6쪽)</span></div>
+        <div class="sheet-meta"><span>[별지 제6호 서식]</span><span class="tnum">(8쪽 중 7쪽)</span></div>
         <h2 id="archive-title">학습 기록</h2>
         <table class="form stack">
             <thead><tr><th scope="col">주제</th><th scope="col">사용 기술</th><th scope="col">링크</th></tr></thead>
@@ -369,7 +529,7 @@
 
     <!-- 연락처 -->
     <section class="sheet contact" id="sheet-contact" aria-labelledby="contact-title">
-        <div class="sheet-meta"><span>[문의처]</span><span class="tnum">(7쪽 중 7쪽)</span></div>
+        <div class="sheet-meta"><span>[문의처]</span><span class="tnum">(8쪽 중 8쪽)</span></div>
         <h2 id="contact-title">연락처</h2>
         <dl>
             <dt>이메일</dt>
